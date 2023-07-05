@@ -1,11 +1,21 @@
-import * as React from 'react';
+import * as React from 'react'
+import './InputBox.css';
 
-function InputBox() {
-    return (
-        <div>
-            InputBox
-        </div>
-    );
+type Props = {
+    selectedRepo: string | null;
 }
 
-export default InputBox;
+const InputBox: React.FC<Props> = ({ selectedRepo }) => {
+    return (
+        <div className="InputBox">
+            {selectedRepo ? (
+                <p>Selected repository: {selectedRepo}</p>
+            ) : (
+                <p>Type a command...</p>
+            )}
+        </div>
+    )
+
+}
+
+export default InputBox

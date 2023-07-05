@@ -1,10 +1,14 @@
-import * as React from 'react';
-import './CurrentDir.css'
+import * as React from 'react'
+import './CurrentDir.css';
 
-function CurrentDir() {
+type Props = {
+    currentDir: string;
+}
+
+const CurrentDir: React.FC<Props> = ({ currentDir }) => {
     return (
-        <div>
-            Current Directory
+        <div className="CurrentDir">
+            <p>{currentDir}</p>
         </div>
     );
 }
