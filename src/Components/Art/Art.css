@@ -1,5 +1,18 @@
-
-.art-container {
-    width: 80%;
-    margin: 0 auto;
-}
+/* Art.css */
+.masonry-grid {
+    display: flex;
+    margin-left: -30px; /* some gutter */
+    width: auto;
+  }
+  
+  .masonry-grid_column {
+    padding-left: 30px; /* some gutter */
+    background-clip: padding-box;
+  }
+  
+  .masonry-img {
+    /* change div to img */
+    width: 100%;
+    cursor: pointer;
+  }
+  
