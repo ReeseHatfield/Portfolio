@@ -35,34 +35,36 @@ export default function Art() {
     };
 
     return (
-        <div className="art-container">
-            <Masonry
-            breakpointCols={breakpointColumnsObj}
-            className="masonry-grid"
-            columnClassName="masonry-grid_column"
-            >
-            {images.map((src, index) => (
-                <motion.img
-                    src={src}
-                    alt=""
-                    key={index}
-                    onClick={() => setSelectedImage(src)}
-                    className="masonry-img"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: index * 0.30 }}
+        <>
+            <div className="art-container">
+                <Masonry
+                breakpointCols={breakpointColumnsObj}
+                className="masonry-grid"
+                columnClassName="masonry-grid_column"
+                >
+                {images.map((src, index) => (
+                    <motion.img
+                        src={src}
+                        alt=""
+                        key={index}
+                        onClick={() => setSelectedImage(src)}
+                        className="masonry-img"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: index * 0.30 }}
+                        />
+                    ))}
+                </Masonry>
+                {selectedImage && (
+                <Modal isOpen={true} onClose={() => setSelectedImage(null)}>
+                    <motion.img src={selectedImage} alt="" 
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                        transition={{ duration: 2 }}
                     />
-                ))}
-            </Masonry>
-            {selectedImage && (
-            <Modal isOpen={true} onClose={() => setSelectedImage(null)}>
-                <motion.img src={selectedImage} alt="" 
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
-                    transition={{ duration: 2 }}
-                />
-            </Modal>
-            )}
-        </div>
+                </Modal>
+                )}
+            </div>
+        </>
     );
 }

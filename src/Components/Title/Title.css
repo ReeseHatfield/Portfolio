@@ -1,24 +1,25 @@
 .title-container {
-    text-align: center;
-    padding: 20px;
-    background-color: #000; /* Black background */
-    color: #FF1493; /* Pink text color */
-  }
-  
-  .title-container h1 {
-    font-size: 3em;
-    color: #FF1493; /* Pink color for main title */
-  }
-  
-  .title-container h3 {
-    font-size: 1.2em;
-    color: #FF69B4; /* Lighter pink color for subheadings */
-    margin: 0.5em 0;
-  }
-  
-  .title-container h3:hover {
-    color: #FF1493; /* Darker pink color for subheadings on hover */
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-  
+  text-align: center;
+  padding: 20px;
+  background-color: #000000;
+}
+
+.title-container h1 {
+  font-size: 3em;
+  color: #FF1493;
+}
+
+.title-container h3 {
+  font-size: 1.2em;
+  color: #FF69B4;
+  margin: 0.5em 0;
+}
+
+.title-container h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.title-container h3 a:hover {
+  color: #FF1493;
+}
