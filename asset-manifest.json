@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/www.novaleeprince.art/static/css/main.b168c621.css",
-    "main.js": "/www.novaleeprince.art/static/js/main.24da8022.js",
+    "main.js": "/www.novaleeprince.art/static/js/main.d0b54d83.js",
     "static/js/787.c1112931.chunk.js": "/www.novaleeprince.art/static/js/787.c1112931.chunk.js",
     "static/media/IMG_0379.jpeg": "/www.novaleeprince.art/static/media/IMG_0379.9cc4d18f4dea27f55d22.jpeg",
     "static/media/IMG_0347.jpeg": "/www.novaleeprince.art/static/media/IMG_0347.eedf8e85438b0c810620.jpeg",
@@ -16,11 +16,11 @@
     "static/media/IMG_0380.jpeg": "/www.novaleeprince.art/static/media/IMG_0380.23bde610b4f78c48ea61.jpeg",
     "index.html": "/www.novaleeprince.art/index.html",
     "main.b168c621.css.map": "/www.novaleeprince.art/static/css/main.b168c621.css.map",
-    "main.24da8022.js.map": "/www.novaleeprince.art/static/js/main.24da8022.js.map",
+    "main.d0b54d83.js.map": "/www.novaleeprince.art/static/js/main.d0b54d83.js.map",
     "787.c1112931.chunk.js.map": "/www.novaleeprince.art/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b168c621.css",
-    "static/js/main.24da8022.js"
+    "static/js/main.d0b54d83.js"
   ]
 }
