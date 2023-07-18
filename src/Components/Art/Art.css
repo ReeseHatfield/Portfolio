@@ -1,5 +1,10 @@
 /* Art.css */
-.masonry-grid {
+.art-container {
+    background: #000; /* Black background */
+    color: #FF1493; /* Pink text color */
+  }
+  
+  .masonry-grid {
     display: flex;
     margin-left: -30px; /* some gutter */
     width: auto;
@@ -14,5 +19,12 @@
     /* change div to img */
     width: 100%;
     cursor: pointer;
+    border: 2px solid #FF1493; /* Pink border for images */
+    transition: transform 0.3s ease; /* Add transition for transform property */
+  }
+  
+  .masonry-img:hover {
+    border-color: #FF69B4; /* Lighter pink border on hover */
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
   }
   

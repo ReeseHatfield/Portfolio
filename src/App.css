@@ -1,13 +1,14 @@
 .App {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
   background: #000;
-  color: #33FF49;
+  color: #0ce1ac;
   padding: 20px;
   box-sizing: border-box;
   font-family: 'Courier New', monospace;
   position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
