@@ -2,36 +2,25 @@ import React, { useState } from 'react';
 import Modal from '../Modal/Modal.tsx';
 import Masonry from 'react-masonry-css';
 import { motion } from 'framer-motion'
-import './Art.css';
+import './Flashsheets.css';
 
 // Import the images
-import gothGirl from '../../images/IMG_0533.png';
-import redHair from '../../images/IMG_0379.jpeg'
-import fairy from '../../images/IMG_0534.png';
-import bwSun from '../../images/IMG_0346.jpeg';
-import pinkLady from '../../images/IMG_0378.jpeg';
-import longHairPinkLady from '../../images/IMG_0386.jpeg';
-import moonAndStar from '../../images/IMG_0387.jpeg';
-import greenShirtLady from '../../images/IMG_0537.png';
-import overallGirl from '../../images/IMG_8160.png';
-import mushroomPainting from '../../images/IMG_9968.png';
-import babyGoat from '../../images/IMG_0539.png';
-import pinkDiamond from '../../images/IMG_0538.png';
-import couple from '../../images/IMG_0535.png';
-import sweetForest from '../../images/IMG_0531.png';
-import frogInCup from '../../images/IMG_0529.png';
-import noname from '../../images/IMG_0528.png';
+import flash1 from '../../images/IMG_0380.jpeg';
+import flash2 from '../../images/IMG_0381.jpeg';
+import flash3 from '../../images/IMG_0382.jpeg';
+import flash4 from '../../images/IMG_0383.jpeg';
+import flash5 from '../../images/IMG_0384.jpeg';
+import flash6 from '../../images/IMG_0385.jpeg';
+import flash7 from '../../images/IMG_0530.png'
+
 
 // this should be done via SSR, 
 // but since its being hosted with github pages
 // SSR is not feasible
 
 
-const images = [gothGirl, redHair, fairy, bwSun,
-    pinkLady, longHairPinkLady, moonAndStar,
-    greenShirtLady, overallGirl, mushroomPainting,
-    babyGoat, pinkDiamond, couple, sweetForest,
-    frogInCup, noname
+const images = [flash1, flash2, flash3, flash4,
+    flash5, flash6, flash7
 ]; // Add the imported images to this array
 
 export default function Art() {
