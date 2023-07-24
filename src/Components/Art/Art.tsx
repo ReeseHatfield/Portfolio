@@ -34,10 +34,10 @@ export default function Art() {
     const [selectedImage, setSelectedImage] = useState(null);
 
     const breakpointColumnsObj = {
-        default: 3,
+        default: 3, // this means if the width of the viewport is larger than 1100px, it will display 3 columns
         1100: 3,
-        700: 2,
-        500: 1
+        700: 2, // if the width of the viewport is between 700px and 1100px, it will display 2 columns
+        500: 2  // if the width of the viewport is less than 500px, it will display 1 column
     };
 
     return (
