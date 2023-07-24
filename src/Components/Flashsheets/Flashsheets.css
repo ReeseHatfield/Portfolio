@@ -6,28 +6,41 @@
 
 .masonry-grid {
     display: flex;
-    margin-left: -30px; /* some gutter */
+    flex-wrap: wrap; /* allows the items to wrap as needed */
+    margin-left: -30px;
     width: auto;
-    height: auto;
-
 }
 
 .masonry-grid_column {
-    padding-left: 30px; /* some gutter */
-    padding-top: 30px;
+    flex: 1; /* this allows the column to grow and shrink as needed */
+    padding-left: 30px;
     background-clip: padding-box;
 }
 
 .masonry-img {
-    /* change div to img */
     width: 100%;
     cursor: pointer;
-    border: 2px solid #FF1493; /* Pink border for images */
-    transition: transform 0.3s ease; /* Add transition for transform property */
-  }
-  
-  .masonry-img:hover {
-    border-color: #FF69B4; /* Lighter pink border on hover */
-    transform: scale(1.05); /* Slightly enlarge the image on hover */
-  }
-  
+    transition: transform 0.3s ease;
+}
+
+.masonry-img:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 600px) {
+    .masonry-img {
+        min-width: 33.33%; /* ensure images take up at least a third of the screen width */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .masonry-img {
+        min-width: 33.33%; /* ensure images take up at least a third of the screen width */
+    }
+}
+
+@media (min-width: 901px) {
+    .masonry-img {
+        min-width: 33.33%; /* ensure images take up at least a third of the screen width */
+    }
+}
