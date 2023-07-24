@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Modal from '../Modal/Modal.tsx';
 import Masonry from 'react-masonry-css';
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 import './Art.css';
 
 // Import the images
@@ -22,22 +22,17 @@ import sweetForest from '../../images/IMG_0531.png';
 import frogInCup from '../../images/IMG_0529.png';
 import noname from '../../images/IMG_0528.png';
 
-// this should be done via SSR, 
-// but since its being hosted with github pages
-// SSR is not feasible
-
-
-const images = [gothGirl, redHair, fairy, bwSun,
+const images = [
+    gothGirl, redHair, fairy, bwSun,
     pinkLady, longHairPinkLady, moonAndStar,
     greenShirtLady, overallGirl, mushroomPainting,
     babyGoat, pinkDiamond, couple, sweetForest,
     frogInCup, noname
-]; // Add the imported images to this array
+]; 
 
 export default function Art() {
     const [selectedImage, setSelectedImage] = useState(null);
-    
-    // Responsive grid settings
+
     const breakpointColumnsObj = {
         default: 3,
         1100: 3,
@@ -46,13 +41,12 @@ export default function Art() {
     };
 
     return (
-        <>
-            <div className="art-container">
-                <Masonry
+        <div className="art-container">
+            <Masonry
                 breakpointCols={breakpointColumnsObj}
                 className="masonry-grid"
                 columnClassName="masonry-grid_column"
-                >
+            >
                 {images.map((src, index) => (
                     <motion.img
                         src={src}
@@ -63,10 +57,10 @@ export default function Art() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: index * 0.30 }}
-                        />
-                    ))}
-                </Masonry>
-                {selectedImage && (
+                    />
+                ))}
+            </Masonry>
+            {selectedImage && (
                 <Modal isOpen={true} onClose={() => setSelectedImage(null)}>
                     <motion.img src={selectedImage} alt="" 
                         initial={{ scale: 0 }}
@@ -74,8 +68,7 @@ export default function Art() {
                         transition={{ duration: 2 }}
                     />
                 </Modal>
-                )}
-            </div>
-        </>
+            )}
+        </div>
     );
 }
