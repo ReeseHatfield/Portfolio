@@ -19,7 +19,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 6px solid #FF1493; /* Add a pink border */
+    border: 6px solid #ffffff; /* Add a pink border */
 }
 
 .modal-content img {
@@ -30,14 +30,14 @@
 
 
 .close-button {
-    box-shadow: inset 0px 1px 0px 0px #FF1493; /* Adjust shadow color to pink */
-	background: linear-gradient(to bottom, #FF1493 5%, #FF69B4 100%); /* Adjust gradient colors to pink */
-	background-color: #FF1493; /* Adjust background color to pink */
+    box-shadow: inset 0px 1px 0px 0px #ffffff; /* Adjust shadow color to pink */
+	background: linear-gradient(to bottom, #ffffff 5%, #ffffff 100%); /* Adjust gradient colors to pink */
+	background-color: #ffffff; /* Adjust background color to pink */
 	border-radius: 11px;
-	border: 2px solid #FF1493; /* Adjust border color to pink */
+	border: 2px solid #ffffff; /* Adjust border color to pink */
 	display: inline-block;
 	cursor: pointer;
-	color: #ffffff;
+	color: #000000;
 	font-family: Arial;
 	font-size: 16px;
 	font-weight: bold;
@@ -48,8 +48,8 @@
 }
 
 .close-button:hover {
-	background: linear-gradient(to bottom, #FF69B4 5%, #FF1493 100%); /* Adjust gradient colors to pink */
-	background-color: #FF69B4; /* Adjust background color to lighter pink */
+	background: linear-gradient(to bottom, #ffffff 5%, #ffffff 100%); /* Adjust gradient colors to pink */
+	background-color: #ffffff; /* Adjust background color to lighter pink */
 }
 
 .close-button:active {
