@@ -6,7 +6,7 @@ import Title from './Components/Title/Title.tsx';
 import Footer from './Components/Footer/Footer.tsx'
 import Navbar from './Components/Navbar/Navbar.tsx';
 import Flashsheets from './Components/Flashsheets/Flashsheets.tsx'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
 
