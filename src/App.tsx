@@ -38,6 +38,25 @@ function App() {
                         <Footer />
                     </div>
                 } />
+                <Route path="/digital" element={
+                    <div>
+                        <Title />
+                        <Navbar />
+                        DIGITAL COMPONENT GOES HERE
+                        <Footer />
+                    </div>
+                }>
+
+                </Route>
+                <Route path="/tattoo" element={
+                    <div>
+                        <Title />
+                        <Navbar />
+                        TATOO COMPONENT GOES HERE
+                        <Footer />
+                    </div>
+                }>
+                </Route>
                 <Route path="/crochet" element={
                     <div>
                         <Title />
